@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПодобратьЗаказыДляПереносаДатыОтгрузки" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПодобратьЗаказыДляПереносаДатыОтгрузки</CommandName>
+				<TextColor>style:FieldTextColor</TextColor>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ExtendedTooltip name="ФормаПодобратьЗаказыДляПереносаДатыОтгрузкиРасширеннаяПодсказка" id="21"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="Страницы" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<Page name="Основная" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="62"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаказы" id="24">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заказы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа заказы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаказыРасширеннаяПодсказка" id="25"/>
+							<ChildItems>
+								<Table name="Заказы" id="1">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.Заказы</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЗаказыКонтекстноеМеню" id="2"/>
+									<AutoCommandBar name="ЗаказыКоманднаяПанель" id="3">
+										<ChildItems>
+											<Button name="ЗаказыПеренестиДатуОтгрузкиНаДень" id="22">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеренестиДатуОтгрузкиНаДень</CommandName>
+												<TextColor>style:FieldSelectionBackColor</TextColor>
+												<BorderColor>style:FieldSelectionBackColor</BorderColor>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Перенести дату отгрузки</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗаказыПеренестиДатуОтгрузкиНаДеньРасширеннаяПодсказка" id="23"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ЗаказыРасширеннаяПодсказка" id="4"/>
+									<SearchStringAddition name="ЗаказыСтрокаПоиска" id="5">
+										<AdditionSource>
+											<Item>Заказы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗаказыСтрокаПоискаКонтекстноеМеню" id="6"/>
+										<ExtendedTooltip name="ЗаказыСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЗаказыСостояниеПросмотра" id="8">
+										<AdditionSource>
+											<Item>Заказы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗаказыСостояниеПросмотраКонтекстноеМеню" id="9"/>
+										<ExtendedTooltip name="ЗаказыСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЗаказыУправлениеПоиском" id="11">
+										<AdditionSource>
+											<Item>Заказы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗаказыУправлениеПоискомКонтекстноеМеню" id="12"/>
+										<ExtendedTooltip name="ЗаказыУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ЗаказыНомерСтроки" id="14">
+											<DataPath>Объект.Заказы.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаказыНомерСтрокиКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ЗаказыНомерСтрокиРасширеннаяПодсказка" id="16"/>
+										</LabelField>
+										<InputField name="ЗаказыЗаказ" id="17">
+											<DataPath>Объект.Заказы.Заказ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЗаказыЗаказКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ЗаказыЗаказРасширеннаяПодсказка" id="19"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="СвязанныеЗаказы" id="28">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.СвязанныеЗаказы</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СвязанныеЗаказыКонтекстноеМеню" id="29"/>
+									<AutoCommandBar name="СвязанныеЗаказыКоманднаяПанель" id="30">
+										<ChildItems>
+											<Button name="СвязанныеЗаказыПеренестиДатуОтгрузкиНаДеньВСвязанныхЗаказах" id="47">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеренестиДатуОтгрузкиНаДеньВСвязанныхЗаказах</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Перенести дату отгрузки</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="СвязанныеЗаказыПеренестиДатуОтгрузкиНаДеньВСвязанныхЗаказахРасширеннаяПодсказка" id="48"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СвязанныеЗаказыРасширеннаяПодсказка" id="31"/>
+									<SearchStringAddition name="СвязанныеЗаказыСтрокаПоиска" id="32">
+										<AdditionSource>
+											<Item>СвязанныеЗаказы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СвязанныеЗаказыСтрокаПоискаКонтекстноеМеню" id="33"/>
+										<ExtendedTooltip name="СвязанныеЗаказыСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СвязанныеЗаказыСостояниеПросмотра" id="35">
+										<AdditionSource>
+											<Item>СвязанныеЗаказы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СвязанныеЗаказыСостояниеПросмотраКонтекстноеМеню" id="36"/>
+										<ExtendedTooltip name="СвязанныеЗаказыСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СвязанныеЗаказыУправлениеПоиском" id="38">
+										<AdditionSource>
+											<Item>СвязанныеЗаказы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СвязанныеЗаказыУправлениеПоискомКонтекстноеМеню" id="39"/>
+										<ExtendedTooltip name="СвязанныеЗаказыУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СвязанныеЗаказыНомерСтроки" id="41">
+											<DataPath>Объект.СвязанныеЗаказы.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СвязанныеЗаказыНомерСтрокиКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="СвязанныеЗаказыНомерСтрокиРасширеннаяПодсказка" id="43"/>
+										</LabelField>
+										<InputField name="СвязанныеЗаказыИсходныйЗаказ" id="49">
+											<DataPath>Объект.СвязанныеЗаказы.ИсходныйЗаказ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СвязанныеЗаказыИсходныйЗаказКонтекстноеМеню" id="50"/>
+											<ExtendedTooltip name="СвязанныеЗаказыИсходныйЗаказРасширеннаяПодсказка" id="51"/>
+										</InputField>
+										<InputField name="СвязанныеЗаказыСвязанныйЗаказ" id="52">
+											<DataPath>Объект.СвязанныеЗаказы.СвязанныйЗаказ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СвязанныеЗаказыСвязанныйЗаказКонтекстноеМеню" id="53"/>
+											<ExtendedTooltip name="СвязанныеЗаказыСвязанныйЗаказРасширеннаяПодсказка" id="54"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Настройки" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтборы" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="56"/>
+							<ChildItems>
+								<InputField name="ТекущаяДата" id="69">
+									<DataPath>Объект.ТекущаяДата</DataPath>
+									<ContextMenu name="ТекущаяДатаКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ТекущаяДатаРасширеннаяПодсказка" id="71"/>
+								</InputField>
+								<InputField name="КаналПродаж" id="66">
+									<DataPath>Объект.КаналПродаж</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="КаналПродажКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="КаналПродажРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="Организация" id="63">
+									<DataPath>Объект.Организация</DataPath>
+									<ContextMenu name="ОрганизацияКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ГрупповаяОбработкаПереносаДатыОтгрузкиЗаказовКлиента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.КаналПродаж</Field>
+				<Field>Объект.Организация</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодобратьЗаказыДляПереносаДатыОтгрузки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать заказы для переноса даты отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать заказы для переноса даты отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодобратьЗаказыДляПереносаДатыОтгрузки</Action>
+		</Command>
+		<Command name="ПеренестиДатуОтгрузкиНаДень" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести дату отгрузки на день</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести дату отгрузки на день</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиДатуОтгрузкиНаДень</Action>
+		</Command>
+		<Command name="синАвтоматическийПереносДатыОтгрузкиПоЗаказам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматический перенос даты отгрузки по заказам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Син автоматический перенос даты отгрузки по заказам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапускАвтоматическогоПереносаДатыОтгрузкиЗаказов</Action>
+		</Command>
+		<Command name="ПеренестиДатуОтгрузкиНаДеньВСвязанныхЗаказах" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести дату отгрузки на день в связанных заказах</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести дату отгрузки на день в связанных заказах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиДатуОтгрузкиНаДеньВСвязанныхЗаказах</Action>
+		</Command>
+	</Commands>
+</Form>
