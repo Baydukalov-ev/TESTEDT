@@ -362,6 +362,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>Форма</Form>
+			<Form>Форма1</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
